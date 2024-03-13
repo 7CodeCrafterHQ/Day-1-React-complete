@@ -1,0 +1,15 @@
+ npm init --y
+ Autor name change
+ script me start(node app.js) and run (nodemon app.js) me command likhni hai 
+npm install express --save file install krna hai 
+then npm i dotenv
+.env file banao
+app.js file banao
+app js ka code likho
+then env me PORT 8080 banayege
+ab app.js me dotenv require krke config karenge and path :"./.env" config me likh denge
+ab PORT ke jagah process.env.PORT likh denge 
+ab asli kam aayega github pr upload krne ka 
+to sbse pahle .gitignore file bna lenge root pr hi
+ab .gitignore file me  bo file likhnege jo git pr upload nhi karni 
+.env , package-lock.json,node_modules
