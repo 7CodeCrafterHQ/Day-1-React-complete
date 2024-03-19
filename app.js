@@ -17,7 +17,12 @@ app.use(express.urlencoded({extended:true}))
 app.use("/api/user",userRouter)
 // http://localhost:8080/api/user
 // http://localhost:8080/api/user/create
-
+  app.all("*",(req,res,next)=>{
+    res.status(404).json({
+        success:false,
+        message:`${req.url} router not found`
+    })
+  })
 
 // server
 app.listen(process.env.PORT ,()=>{
